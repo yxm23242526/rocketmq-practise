@@ -1,0 +1,4 @@
+server:
+  port: 8081
+rocketmq:
+  name-server: 47.102.128.67:9876
