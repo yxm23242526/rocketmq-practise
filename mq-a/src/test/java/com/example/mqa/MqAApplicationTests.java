@@ -72,4 +72,21 @@ class MqAApplicationTests {
                 .setHeader(RocketMQHeaders.KEYS, "一个Key").build();
         rocketMQTemplate.syncSend("bootKeyTopic", message);
     }
+
+
+    @Test
+    void modeTest() throws Exception{
+        for (int i = 0; i < 10; i++){
+            rocketMQTemplate.syncSend("modeTopic", "我是第" + i + "个消息");
+        }
+    }
+
+    //积压问题
+    @Test
+    void jiyaTest() throws Exception{
+        for (int i = 0; i < 100000; i++){
+            Thread.sleep(500L);
+            rocketMQTemplate.syncSend("jiyaTopic", "我是第" + i + "个积压问题");
+        }
+    }
 }
