@@ -7,13 +7,13 @@ import org.apache.rocketmq.spring.core.RocketMQListener;
 import org.springframework.stereotype.Component;
 
 @Component
-@RocketMQMessageListener(topic = "jiyaTopic",
-        consumerGroup = "jiya-consumer-group",
+@RocketMQMessageListener(topic = "overStockTopic",
+        consumerGroup = "overStock-consumer-group",
         consumeThreadNumber = 40,
         consumeMode = ConsumeMode.CONCURRENTLY)
-public class jiyaListener2 implements RocketMQListener<String> {
+public class overStockListener implements RocketMQListener<String> {
     @Override
     public void onMessage(String message) {
-        System.out.println("我是第二个消费者:" + message);
+        System.out.println("我是第一个消费者:" + message);
     }
 }

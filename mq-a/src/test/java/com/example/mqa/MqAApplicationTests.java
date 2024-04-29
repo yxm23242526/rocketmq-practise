@@ -83,10 +83,10 @@ class MqAApplicationTests {
 
     //积压问题
     @Test
-    void jiyaTest() throws Exception{
+    void overStockTest() throws Exception{
         for (int i = 0; i < 100000; i++){
             Thread.sleep(500L);
-            rocketMQTemplate.syncSend("jiyaTopic", "我是第" + i + "个积压问题");
+            rocketMQTemplate.syncSend("overStockTopic", "我是第" + i + "个积压问题");
         }
     }
 }
