@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo" />
+        <module name="tomcat-qps" />
         <module name="mq-b" />
         <module name="mq-a" />
+        <module name="demo" />
       </profile>
     </annotationProcessing>
   </component>
@@ -18,6 +19,7 @@
       <module name="demo" options="-parameters" />
       <module name="mq-a" options="-parameters" />
       <module name="mq-b" options="-parameters" />
+      <module name="tomcat-qps" options="-parameters" />
     </option>
   </component>
 </project>

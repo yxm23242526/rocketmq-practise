@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/mq-a/pom.xml" />
         <option value="$PROJECT_DIR$/mq-b/pom.xml" />
+        <option value="$PROJECT_DIR$/tomcat-qps/pom.xml" />
       </list>
     </option>
   </component>

@@ -89,4 +89,10 @@ class MqAApplicationTests {
             rocketMQTemplate.syncSend("overStockTopic", "我是第" + i + "个积压问题");
         }
     }
+
+    //轨迹消息
+    @Test
+    void traceTest() throws Exception{
+        rocketMQTemplate.syncSend("traceTopic", "我是一个轨迹消息");
+    }
 }

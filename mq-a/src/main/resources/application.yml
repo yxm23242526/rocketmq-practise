@@ -2,3 +2,4 @@ rocketmq:
   name-server: 47.102.128.67:9876
   producer:
     group: producer-group
+    enable-msg-trace: true
