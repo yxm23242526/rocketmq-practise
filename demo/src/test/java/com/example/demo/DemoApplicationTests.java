@@ -23,6 +23,14 @@ import java.util.UUID;
 @SpringBootTest
 class DemoApplicationTests {
 
+
+
+    @Autowired
+    private RocketMQTemplate rocketMQTemplate;
+
+
+
+
     @Autowired
     private JdbcTemplate jdbcTemplate;
 

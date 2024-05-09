@@ -9,6 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="tomcat-qps" />
         <module name="mq-b" />
+        <module name="seckill-web" />
+        <module name="seckill-service" />
         <module name="mq-a" />
         <module name="demo" />
       </profile>
@@ -19,6 +21,8 @@
       <module name="demo" options="-parameters" />
       <module name="mq-a" options="-parameters" />
       <module name="mq-b" options="-parameters" />
+      <module name="seckill-service" options="-parameters" />
+      <module name="seckill-web" options="-parameters" />
       <module name="tomcat-qps" options="-parameters" />
     </option>
   </component>

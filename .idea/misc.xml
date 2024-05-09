@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/mq-a/pom.xml" />
         <option value="$PROJECT_DIR$/mq-b/pom.xml" />
         <option value="$PROJECT_DIR$/tomcat-qps/pom.xml" />
+        <option value="$PROJECT_DIR$/seckill-service/pom.xml" />
+        <option value="$PROJECT_DIR$/seckill-web/pom.xml" />
       </list>
     </option>
   </component>
