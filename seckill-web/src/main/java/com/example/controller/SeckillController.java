@@ -32,7 +32,7 @@ public class SeckillController {
         //登陆之后这个userId可以从token中取，没必要传参数
 
         //需要一个Uniquekey 最好是再加上一个ttl，保证每天能抢
-        String key = userId + "-" + goodsId;
+        String key = "seckill:"+ userId + "-" + goodsId;
         Boolean flag = stringRedisTemplate.opsForValue().setIfAbsent(key, "");
         if (Boolean.FALSE.equals(flag)){
             return "已经抢过秒杀了";
